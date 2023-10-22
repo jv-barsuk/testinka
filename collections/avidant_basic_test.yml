@@ -1,0 +1,6 @@
+- &collection_basic_test
+    type: collection
+    name: Basic Tests
+    description:
+    test_cases:
+    - *id_basic_test

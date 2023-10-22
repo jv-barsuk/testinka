@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{name}}
+    {{#each test_cases}}
+        <h1>{{this.name}}</h1>
+        <p>{{this.description}}</p>
+        {{#each this.steps}}
+            <div>
+                <div>{{this.name}}</div>
+                <div>{{this.description}}</div>
+                <div>Expected result</div>
+                <button>OK</button>
+                <button>FAIL</button>
+                <button>ignored</button>
+            </div>
+        {{/each}}
+    {{/each}}
+    {{demo.name}}
+</body>
+</html>
