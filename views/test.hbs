@@ -4,24 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/main.js"></script>
+    <title>Testinka</title>
 </head>
 <body>
-    {{name}}
-    {{#each test_cases}}
-        <h1>{{this.name}}</h1>
-        <p>{{this.description}}</p>
-        {{#each this.steps}}
-            <div>
-                <div>{{this.name}}</div>
-                <div>{{this.description}}</div>
-                <div>Expected result</div>
-                <button>OK</button>
-                <button>FAIL</button>
-                <button>ignored</button>
-            </div>
+    <h1>{{name}}</h1>
+    {{#each scenario}}
+        <h2 class="name"><span class="type">{{this.collection.type}}:</span>{{this.collection.name}}</h2>
+        <div class="description">{{this.collection.description}}</div>
+        <div class="variables">{{this.variables}}</div>
+        {{#each this.collection.test_cases}}
+            <h3 class="name"><span class="type">{{this.type}}:</span>{{this.name}}</h3>
+            <div class="description">{{this.description}}</div>
+            <table class="teststep_table">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>description</th>
+                    <th>expected result</th>
+                </tr>
+            </thead>
+            <tbody>
+            {{#each this.steps}}
+                <tr>
+                    <td class="name">{{this.name}}</td>
+                    <td class="description">{{this.description}}</td>
+                    <td class="result">{{this.expected_result}}</td>
+                    <td class="">
+                        <button class="button_ok">OK</button>
+                        <button class="button_fail">FAIL</button>
+                        <button class="button_ignore">ignored</button>
+                    </td>
+                </div>
+            {{/each}}
+            </tbody>
+            </table>
+
         {{/each}}
     {{/each}}
-    {{demo.name}}
 </body>
 </html>

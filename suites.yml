@@ -51,5 +51,17 @@ collections:
     - *id_basic_test
     - *id_video_test
     
-
+scenarios:
+- &scenario_basic_test
+    type: scenario
+    name: Basic Scenario (online/offline)
+    description:
+    collections:
+        -
+            collection: *collection_basic_test
+            variables: 
+                - online
+        -   collection: *collection_basic_test
+            variables:
+                - offline
 

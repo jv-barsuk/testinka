@@ -4,5 +4,5 @@
     description:
     test_cases:
     - *id_basic_test
-    - *id_video_test
+    - *testcase_video_captions
     

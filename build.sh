@@ -29,6 +29,12 @@ for f in $(ls collections/*.yml); do
     echo -e "\n" >> $OUT_FILE
 done
 
-yq eval -j out.yml > out.json
+echo "scenarios:" >> $OUT_FILE
+for f in $(ls scenarios/*.yml); do
+    cat $f >> $OUT_FILE
+    echo -e "\n" >> $OUT_FILE
+done
+
+yq eval -o=json out.yml > out.json
 
 #cat out.json | jq '.collections[]|select(.name=="Basic Tests")'

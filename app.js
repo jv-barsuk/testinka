@@ -11,22 +11,24 @@ app.set('view engine', 'hbs')
 
 app.set('views', 'views')
 
-let demo = {
-    name: 'Rohan',
-    age: 26
-}
- 
-fs.readFile('out.json', (err, data) => {
-    if (err) {
-        console.error('Error reading the file:', err);
-        return;
-    }
-    testSuite = JSON.parse(data);
-});
 
 
 app.get('/', (req, res) => {
-    res.render('test.hbs', testSuite.collections[1])
+
+    fs.readFile('out.json', (err, data) => {
+        if (err) {
+            console.error('Error reading the file:', err);
+            return;
+        }
+        testData = JSON.parse(data);
+        res.render('test.hbs', testData.scenarios[1])
+    });
+
+    
+})
+
+app.get('/static/:file', (req, res) => {
+    res.sendFile(`${__dirname}/static/${req.params.file}`)
 })
 
 app.listen(3000);
