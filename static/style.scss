@@ -28,6 +28,7 @@ body {
 
     .description {
         font-style: italic;
+        color: grey;
     }
 
     div.variables {
@@ -45,12 +46,16 @@ body {
     }
 
     .teststep_table {
+        border-spacing: 0px;
+        th {
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: rgb(220, 246, 255);
+        }
         td {
             padding: 5px 10px;
             border-bottom: 1px solid lightgrey;
-        }
-        th {
-            font-weight: bold;
         }
     }
     

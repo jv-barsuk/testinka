@@ -29,6 +29,7 @@ body button.button_ignore {
 
 body .description {
   font-style: italic;
+  color: grey;
 }
 
 body div.variables {
@@ -45,12 +46,20 @@ body .type {
   color: grey;
 }
 
-body .teststep_table td {
-  padding: 5px 10px;
-  border-bottom: 1px solid lightgrey;
+body .teststep_table {
+  border-spacing: 0px;
 }
 
 body .teststep_table th {
   font-weight: bold;
+}
+
+body .teststep_table tr:hover {
+  background-color: #dcf6ff;
+}
+
+body .teststep_table td {
+  padding: 5px 10px;
+  border-bottom: 1px solid lightgrey;
 }
 /*# sourceMappingURL=style.css.map */
