@@ -58,6 +58,10 @@ body .teststep_table tr:hover {
   background-color: #dcf6ff;
 }
 
+body .teststep_table tr.active {
+  background-color: #dcf6ff;
+}
+
 body .teststep_table td {
   padding: 5px 10px;
   border-bottom: 1px solid lightgrey;

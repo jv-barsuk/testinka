@@ -27,14 +27,14 @@
             </thead>
             <tbody>
             {{#each this.steps}}
-                <tr>
+                <tr class="teststep">
                     <td class="name">{{this.name}}</td>
                     <td class="description">{{this.description}}</td>
                     <td class="result">{{this.expected_result}}</td>
                     <td class="">
                         <button class="button_ok">OK</button>
                         <button class="button_fail">FAIL</button>
-                        <button class="button_ignore">ignored</button>
+                        <button class="button_ignored">ignored</button>
                     </td>
                 </div>
             {{/each}}
