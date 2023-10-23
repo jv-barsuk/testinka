@@ -12,6 +12,7 @@ body button {
   display: inline-block;
   font-size: 12px;
   cursor: pointer;
+  width: 51px;
 }
 
 body button.button_ok {

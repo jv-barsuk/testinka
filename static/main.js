@@ -1,12 +1,21 @@
-document.addEventListener("DOMContentLoaded", main())
-
+docReady(main)
 function main() {
-    setTimeout(addButtonFunction, 2000) //TODO: hacky
-    setTimeout(setStatus, 2000) //TODO: hacky
+    setButtonListener()
+    setStatusListener()
     setKeyListeners()
 }
 
-function addButtonFunction() {    
+function docReady(fn) {
+    // see if DOM is already available
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        // call on next available tick
+        setTimeout(fn, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
+} 
+
+function setButtonListener() {    
     Array.from(document.getElementsByTagName("button")).forEach(button => {
         button.addEventListener("click", (event) => {
             let children = Array.from(event.target.parentNode.children)
@@ -28,11 +37,10 @@ function toggleDisplay(element) {
     }
 }
 
-function setStatus() {
+function setStatusListener() {
     let teststeps = Array.from(document.getElementsByClassName("teststep"))
     teststeps.forEach(step => {
         step.addEventListener("click", (event) => {
-            console.log("click")
             teststeps.forEach(element => {
                 element.classList.remove("active")
             })
