@@ -1,0 +1,6 @@
+- &collection_video_test
+    type: collection
+    name: Video Tests
+    description:
+    test_cases:
+    - *testcase_video_captions

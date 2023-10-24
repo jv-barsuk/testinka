@@ -1,0 +1,70 @@
+body {
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+body button {
+  border: none;
+  color: white;
+  padding: 3px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  width: 51px;
+}
+
+body button.button_ok {
+  background-color: green;
+}
+
+body button.button_fail {
+  background-color: darkred;
+}
+
+body button.button_ignore {
+  background-color: bisque;
+  color: black;
+}
+
+body .description {
+  font-style: italic;
+  color: grey;
+}
+
+body div.variables {
+  background-color: lightgrey;
+  width: 100%;
+}
+
+body div.name {
+  /*dd*/
+}
+
+body .type {
+  font-style: italic;
+  color: grey;
+}
+
+body .teststep_table {
+  border-spacing: 0px;
+}
+
+body .teststep_table th {
+  font-weight: bold;
+}
+
+body .teststep_table tr:hover {
+  background-color: #dcf6ff;
+}
+
+body .teststep_table tr.active {
+  background-color: #dcf6ff;
+}
+
+body .teststep_table td {
+  padding: 5px 10px;
+  border-bottom: 1px solid lightgrey;
+}
+/*# sourceMappingURL=style.css.map */

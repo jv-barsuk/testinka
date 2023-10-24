@@ -1,0 +1,17 @@
+test:
+    subtitle test: &subtitle-test
+        subtitles on:
+            check
+        subtitles off:
+            check
+        no subtitles:
+            check
+
+suite:
+    video view:
+        window: *subtitle-test
+        fullscreen: *subtitle-test
+    overlay player:
+        window: *subtitle-test
+        fullscreen: *subtitle-test
+

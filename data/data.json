@@ -1,0 +1,418 @@
+{
+  "suites": [
+    {
+      "type": "suite",
+      "type_description": "collection of all tests that can be separated from another AA vs. DAM",
+      "name": "avidant",
+      "sections": [
+        {
+          "type": "section",
+          "type_description": "organize test cases hierachically e.g. all video tests, all login tests",
+          "name": "Unsorted Section",
+          "test_cases": [
+            {
+              "type": "test_case",
+              "type_description": "A test case can ideally be verified by a single tester in a short period of time and confirms a specific functionality, documents a task or verifies a project artifact.",
+              "id": "basic_test",
+              "name": null,
+              "description": null,
+              "steps": [
+                {
+                  "type": "test step",
+                  "name": null,
+                  "description": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "type_description": "organize test cases hierachically e.g. all video tests, all login tests",
+          "name": "Unsorted Section",
+          "test_cases": [
+            {
+              "type": "test",
+              "id": "video_test",
+              "name": "Video Captions",
+              "description": "Test the video captions",
+              "steps": [
+                {
+                  "type": "test step",
+                  "name": "Open a video without captions",
+                  "description": "Merlin ...",
+                  "expected_result": "no captions shown"
+                },
+                {
+                  "type": "test step",
+                  "name": "Open a video with captions; default off",
+                  "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+                  "expected_result": "Captions not shown"
+                },
+                {
+                  "type": "test step",
+                  "name": "Open a video with captions; default on",
+                  "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+                  "expected_result": "Captions shown"
+                },
+                {
+                  "type": "test step",
+                  "name": "Open a video with multiple captions; default on",
+                  "description": "Merlin ...; Make it fullscreen; Change Captions; Toggle Captions",
+                  "expected_result": "First Captions in list shown"
+                },
+                {
+                  "type": "test step",
+                  "name": "Open a video without captions (Overlay)",
+                  "description": "Merlin ...",
+                  "expected_result": "no captions shown"
+                },
+                {
+                  "type": "test step",
+                  "name": "Open a video with captions; default off (Overlay)",
+                  "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+                  "expected_result": "Captions not shown"
+                },
+                {
+                  "type": "test step",
+                  "name": "Open a video with captions; default on (Overlay)",
+                  "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+                  "expected_result": "Captions shown"
+                },
+                {
+                  "type": "test step",
+                  "name": "Open a video with multiple captions; default on (Overlay)",
+                  "description": "Merlin ...; Make it fullscreen; Change Captions; Toggle Captions"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "type_description": "organize test cases hierachically e.g. all video tests, all login tests",
+          "name": "Unsorted Section",
+          "test_cases": [
+            {
+              "type": "test",
+              "id": "video_test",
+              "name": null,
+              "description": null,
+              "steps": [
+                {
+                  "type": "test step",
+                  "name": null,
+                  "description": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "type": "collection",
+      "name": "Basic Tests",
+      "description": null,
+      "test_cases": [
+        {
+          "type": "test_case",
+          "type_description": "A test case can ideally be verified by a single tester in a short period of time and confirms a specific functionality, documents a task or verifies a project artifact.",
+          "id": "basic_test",
+          "name": null,
+          "description": null,
+          "steps": [
+            {
+              "type": "test step",
+              "name": null,
+              "description": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "collection",
+      "name": "Extended Test",
+      "description": null,
+      "test_cases": [
+        {
+          "type": "test_case",
+          "type_description": "A test case can ideally be verified by a single tester in a short period of time and confirms a specific functionality, documents a task or verifies a project artifact.",
+          "id": "basic_test",
+          "name": null,
+          "description": null,
+          "steps": [
+            {
+              "type": "test step",
+              "name": null,
+              "description": null
+            }
+          ]
+        },
+        {
+          "type": "test",
+          "id": "video_test",
+          "name": "Video Captions",
+          "description": "Test the video captions",
+          "steps": [
+            {
+              "type": "test step",
+              "name": "Open a video without captions",
+              "description": "Merlin ...",
+              "expected_result": "no captions shown"
+            },
+            {
+              "type": "test step",
+              "name": "Open a video with captions; default off",
+              "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+              "expected_result": "Captions not shown"
+            },
+            {
+              "type": "test step",
+              "name": "Open a video with captions; default on",
+              "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+              "expected_result": "Captions shown"
+            },
+            {
+              "type": "test step",
+              "name": "Open a video with multiple captions; default on",
+              "description": "Merlin ...; Make it fullscreen; Change Captions; Toggle Captions",
+              "expected_result": "First Captions in list shown"
+            },
+            {
+              "type": "test step",
+              "name": "Open a video without captions (Overlay)",
+              "description": "Merlin ...",
+              "expected_result": "no captions shown"
+            },
+            {
+              "type": "test step",
+              "name": "Open a video with captions; default off (Overlay)",
+              "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+              "expected_result": "Captions not shown"
+            },
+            {
+              "type": "test step",
+              "name": "Open a video with captions; default on (Overlay)",
+              "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+              "expected_result": "Captions shown"
+            },
+            {
+              "type": "test step",
+              "name": "Open a video with multiple captions; default on (Overlay)",
+              "description": "Merlin ...; Make it fullscreen; Change Captions; Toggle Captions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "collection",
+      "name": "Video Tests",
+      "description": null,
+      "test_cases": [
+        {
+          "type": "test",
+          "id": "video_test",
+          "name": "Video Captions",
+          "description": "Test the video captions",
+          "steps": [
+            {
+              "type": "test step",
+              "name": "Open a video without captions",
+              "description": "Merlin ...",
+              "expected_result": "no captions shown"
+            },
+            {
+              "type": "test step",
+              "name": "Open a video with captions; default off",
+              "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+              "expected_result": "Captions not shown"
+            },
+            {
+              "type": "test step",
+              "name": "Open a video with captions; default on",
+              "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+              "expected_result": "Captions shown"
+            },
+            {
+              "type": "test step",
+              "name": "Open a video with multiple captions; default on",
+              "description": "Merlin ...; Make it fullscreen; Change Captions; Toggle Captions",
+              "expected_result": "First Captions in list shown"
+            },
+            {
+              "type": "test step",
+              "name": "Open a video without captions (Overlay)",
+              "description": "Merlin ...",
+              "expected_result": "no captions shown"
+            },
+            {
+              "type": "test step",
+              "name": "Open a video with captions; default off (Overlay)",
+              "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+              "expected_result": "Captions not shown"
+            },
+            {
+              "type": "test step",
+              "name": "Open a video with captions; default on (Overlay)",
+              "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+              "expected_result": "Captions shown"
+            },
+            {
+              "type": "test step",
+              "name": "Open a video with multiple captions; default on (Overlay)",
+              "description": "Merlin ...; Make it fullscreen; Change Captions; Toggle Captions"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "type": "scenario",
+      "name": "Basic Scenario (online/offline)",
+      "description": null,
+      "scenario": [
+        {
+          "collection": {
+            "type": "collection",
+            "name": "Video Tests",
+            "description": null,
+            "test_cases": [
+              {
+                "type": "test",
+                "id": "video_test",
+                "name": "Video Captions",
+                "description": "Test the video captions",
+                "steps": [
+                  {
+                    "type": "test step",
+                    "name": "Open a video without captions",
+                    "description": "Merlin ...",
+                    "expected_result": "no captions shown"
+                  },
+                  {
+                    "type": "test step",
+                    "name": "Open a video with captions; default off",
+                    "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+                    "expected_result": "Captions not shown"
+                  },
+                  {
+                    "type": "test step",
+                    "name": "Open a video with captions; default on",
+                    "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+                    "expected_result": "Captions shown"
+                  },
+                  {
+                    "type": "test step",
+                    "name": "Open a video with multiple captions; default on",
+                    "description": "Merlin ...; Make it fullscreen; Change Captions; Toggle Captions",
+                    "expected_result": "First Captions in list shown"
+                  },
+                  {
+                    "type": "test step",
+                    "name": "Open a video without captions (Overlay)",
+                    "description": "Merlin ...",
+                    "expected_result": "no captions shown"
+                  },
+                  {
+                    "type": "test step",
+                    "name": "Open a video with captions; default off (Overlay)",
+                    "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+                    "expected_result": "Captions not shown"
+                  },
+                  {
+                    "type": "test step",
+                    "name": "Open a video with captions; default on (Overlay)",
+                    "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+                    "expected_result": "Captions shown"
+                  },
+                  {
+                    "type": "test step",
+                    "name": "Open a video with multiple captions; default on (Overlay)",
+                    "description": "Merlin ...; Make it fullscreen; Change Captions; Toggle Captions"
+                  }
+                ]
+              }
+            ]
+          },
+          "variables": [
+            "online"
+          ]
+        },
+        {
+          "collection": {
+            "type": "collection",
+            "name": "Video Tests",
+            "description": null,
+            "test_cases": [
+              {
+                "type": "test",
+                "id": "video_test",
+                "name": "Video Captions",
+                "description": "Test the video captions",
+                "steps": [
+                  {
+                    "type": "test step",
+                    "name": "Open a video without captions",
+                    "description": "Merlin ...",
+                    "expected_result": "no captions shown"
+                  },
+                  {
+                    "type": "test step",
+                    "name": "Open a video with captions; default off",
+                    "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+                    "expected_result": "Captions not shown"
+                  },
+                  {
+                    "type": "test step",
+                    "name": "Open a video with captions; default on",
+                    "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+                    "expected_result": "Captions shown"
+                  },
+                  {
+                    "type": "test step",
+                    "name": "Open a video with multiple captions; default on",
+                    "description": "Merlin ...; Make it fullscreen; Change Captions; Toggle Captions",
+                    "expected_result": "First Captions in list shown"
+                  },
+                  {
+                    "type": "test step",
+                    "name": "Open a video without captions (Overlay)",
+                    "description": "Merlin ...",
+                    "expected_result": "no captions shown"
+                  },
+                  {
+                    "type": "test step",
+                    "name": "Open a video with captions; default off (Overlay)",
+                    "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+                    "expected_result": "Captions not shown"
+                  },
+                  {
+                    "type": "test step",
+                    "name": "Open a video with captions; default on (Overlay)",
+                    "description": "Merlin ...; Make it fullscreen; Toggle Captions",
+                    "expected_result": "Captions shown"
+                  },
+                  {
+                    "type": "test step",
+                    "name": "Open a video with multiple captions; default on (Overlay)",
+                    "description": "Merlin ...; Make it fullscreen; Change Captions; Toggle Captions"
+                  }
+                ]
+              }
+            ]
+          },
+          "variables": [
+            "offline"
+          ]
+        }
+      ]
+    }
+  ]
+}

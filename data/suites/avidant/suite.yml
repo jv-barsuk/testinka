@@ -1,0 +1,4 @@
+type: suite
+type_description: collection of all tests that can be separated from another AA vs. DAM
+name: avidant
+description:

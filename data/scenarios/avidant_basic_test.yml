@@ -1,0 +1,12 @@
+- &scenario_basic_test
+    type: scenario
+    name: Basic Scenario (online/offline)
+    description:
+    scenario:
+        -
+            collection: *collection_video_test
+            variables: 
+                - online
+        -   collection: *collection_video_test
+            variables:
+                - offline
