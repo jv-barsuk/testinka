@@ -18,7 +18,7 @@ go to https://localhost:3000 to open the interface.
 - **Scenarios:** a way to execute a test collection with variable parameters e.g. online test vs. offline test.
   
 ### Build your own tests
-#### Prerequisits
+#### Prerequisites
 * Bash
 * yq
 
