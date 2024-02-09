@@ -49,6 +49,7 @@ body .type {
 
 body .teststep_table {
   border-spacing: 0px;
+  width: 95vw;
 }
 
 body .teststep_table th {
@@ -66,5 +67,21 @@ body .teststep_table tr.active {
 body .teststep_table td {
   padding: 5px 10px;
   border-bottom: 1px solid lightgrey;
+}
+
+body .teststep_table td:nth-child(1) {
+  width: 30%;
+}
+
+body .teststep_table td:nth-child(2) {
+  width: 30%;
+}
+
+body .teststep_table td:nth-child(3) {
+  width: 30%;
+}
+
+body .teststep_table td:nth-child(4) {
+  width: 10%;
 }
 /*# sourceMappingURL=style.css.map */

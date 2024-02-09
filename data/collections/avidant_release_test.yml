@@ -1,8 +1,0 @@
-- &collection_extended_test
-    type: collection
-    name: Extended Test
-    description:
-    test_cases:
-    - *id_basic_test
-    - *testcase_video_captions
-    

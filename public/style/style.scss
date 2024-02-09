@@ -48,6 +48,7 @@ body {
 
     .teststep_table {
         border-spacing: 0px;
+        width: 95vw;
         th {
             font-weight: bold;
         }
@@ -62,6 +63,19 @@ body {
         td {
             padding: 5px 10px;
             border-bottom: 1px solid lightgrey;
+        }
+
+        td:nth-child(1) {
+            width: 30%;
+        }
+        td:nth-child(2) {
+            width: 30%;
+        }
+        td:nth-child(3) {
+            width: 30%;
+        }
+        td:nth-child(4) {
+            width: 10%;
         }
     }
     
