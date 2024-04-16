@@ -1,6 +1,6 @@
 body {
-    font-family: sans-serif;
-    font-size: 12px;
+    font-family: "Red Hat Display";
+    font-size: 14px;
     margin-left: 20px;
 
     /* Collection name Tooltip */
@@ -137,7 +137,7 @@ body {
         line-height: 400%;
 
         span.variable {
-            background: lightblue;
+            background: #e9f3fc;
             padding: 10px;
             border-radius: 20px;
         }
@@ -153,29 +153,41 @@ body {
         font-size: medium;
         border-bottom: 1px dotted black;
     }
-
+    .round_table {
+        border: 1px solid #dcdcde;
+        border-radius: 6px;
+        overflow: auto;
+    }
     .teststep_table {
         border-spacing: 0px;
         width: 100%;
         border-collapse: collapse;
+        line-height: 1.5;
         th {
             font-weight: bold;
             text-align: left;
-            border-bottom: 1px solid darkgrey;
-            text-transform: uppercase;
-            padding: 5px 10px;
+            font-weight: 500;
+            padding: 10px 10px;
+            background-color: #fbfafd;
         }
         tr {
-            border-bottom: 1px solid lightgrey;
+            border-bottom: 1px solid #dcdcdc;
+            &:last-child {
+                border-bottom: none;
+            }
             &:hover {
-                background-color: rgb(220, 246, 255);
+                background-color: #e9f3fc;
             }
             &.active {
-                background-color: rgb(220, 246, 255);
+                background-color: #e9f3fc;
             }            
         }
         td {
-            padding: 5px 10px;
+            padding: 10px 10px;
+            font-size: 13px;
+            font-weight: 400;
+            color: #333238;
+
             &.note input {
                 font-family: "Indie Flower";
                 border: none;
@@ -226,37 +238,15 @@ body {
         td:nth-child(2) {
             width: 30%;
             text-align: left;
+            color: black;
         }
          td:nth-child(3) {
-            
+            color: #626168;
         }
         td:nth-child(4) {
             width: 20%;
         }
-        @media (max-width: 1317px){
-            td:nth-child(1){
-                width: auto;
 
-            }
-            td:nth-child(2){
-                width: auto;
-            }
-            td:nth-child(3) {
-              display: inline-block;
-              position: relative;
-              left: 50%;
-              transform: translateX(-50%);
-            }
-    }    /* Zebra table */
-        tr:nth-child(even){
-            background-color: #f2f2f28a;
-            &:hover {
-                background-color: rgb(220, 246, 255);
-            }
-            &.active {
-                background-color: rgb(220, 246, 255);
-            }
-        }
 
     }
     
