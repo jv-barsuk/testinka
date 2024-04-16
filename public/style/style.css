@@ -1,11 +1,83 @@
 body {
   font-family: sans-serif;
   font-size: 12px;
+  margin-left: 20px;
+  /* Collection name Tooltip */
+  /* Collection & Teststep description Tooltip */
+  /* Type Tooltip */
 }
-
+body [name-tooltip] {
+  position: sticky;
+  left: 10px;
+  cursor: pointer;
+}
+body [name-tooltip]:before {
+  content: attr(name-tooltip);
+  position: absolute;
+  opacity: 0;
+  width: -moz-max-content;
+  width: max-content;
+  top: -5px;
+  left: 105%;
+  padding: 5px 10px;
+  background-color: black;
+  border-radius: 0.25em;
+  color: white;
+  text-align: center;
+  transition: 0.2s;
+}
+body [name-tooltip]:hover:before {
+  opacity: 1;
+}
+body [title-description-tooltip] {
+  position: sticky;
+  left: 10px;
+  cursor: pointer;
+}
+body [title-description-tooltip]:before {
+  content: attr(title-description-tooltip);
+  position: absolute;
+  opacity: 0;
+  width: -moz-max-content;
+  width: max-content;
+  top: -5px;
+  left: 105%;
+  padding: 5px 10px;
+  background-color: black;
+  border-radius: 0.25em;
+  color: white;
+  text-align: center;
+  transition: 0.2s;
+}
+body [title-description-tooltip]:hover:before {
+  opacity: 1;
+}
+body [type-tooltip] {
+  position: sticky;
+  left: 10px;
+  cursor: pointer;
+}
+body [type-tooltip]:before {
+  content: attr(type-tooltip);
+  position: absolute;
+  opacity: 0;
+  width: -moz-max-content;
+  width: max-content;
+  top: -5px;
+  left: 105%;
+  padding: 5px 10px;
+  background-color: grey;
+  border-radius: 0.25em;
+  color: white;
+  text-align: center;
+  transition: 0.2s;
+}
+body [type-tooltip]:hover:before {
+  opacity: 1;
+}
 body button {
   border: none;
-  color: white;
+  color: black;
   padding: 3px 6px;
   text-align: center;
   text-decoration: none;
@@ -14,74 +86,151 @@ body button {
   cursor: pointer;
   width: 51px;
 }
-
 body button.button_ok {
   background-color: green;
+  color: white;
 }
-
 body button.button_fail {
   background-color: darkred;
+  color: white;
 }
-
 body button.button_ignore {
   background-color: bisque;
-  color: black;
 }
-
+body a.external {
+  background-image: url("/static/assets/image/external_link_icon.png");
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body .collection {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+body .cdescription {
+  font-style: italic;
+  color: grey;
+  font-size: small;
+}
 body .description {
   font-style: italic;
   color: grey;
 }
-
 body div.variables {
-  background-color: lightgrey;
-  width: 100%;
+  width: 96.5%;
+  font-size: initial;
+  line-height: 400%;
 }
-
+body div.variables span.variable {
+  background: lightblue;
+  padding: 10px;
+  border-radius: 20px;
+}
 body div.name {
   /*dd*/
 }
-
 body .type {
   font-style: italic;
-  color: grey;
+  color: black;
+  font-size: medium;
+  border-bottom: 1px dotted black;
 }
-
 body .teststep_table {
   border-spacing: 0px;
-  width: 95vw;
+  width: 100%;
+  /* Teststep description Tooltip */
+  /* Zebra table */
 }
-
 body .teststep_table th {
   font-weight: bold;
+  text-align: left;
+  border-bottom: 1px solid darkgrey;
+  text-transform: uppercase;
+  padding: 5px 10px;
 }
-
 body .teststep_table tr:hover {
-  background-color: #dcf6ff;
+  background-color: rgb(220, 246, 255);
 }
-
 body .teststep_table tr.active {
-  background-color: #dcf6ff;
+  background-color: rgb(220, 246, 255);
 }
-
 body .teststep_table td {
   padding: 5px 10px;
   border-bottom: 1px solid lightgrey;
 }
-
-body .teststep_table td:nth-child(1) {
-  width: 30%;
+body .teststep_table td.note input {
+  font-family: "Indie Flower";
+  border: none;
+  background: transparent;
+  width: 100%;
 }
-
+body .teststep_table [description-tooltip] {
+  position: relative;
+  left: 10px;
+  cursor: pointer;
+  display: inline;
+  background: black;
+  color: white;
+  font-size: 12px;
+  border-radius: 1em;
+  padding: 0 0.5em;
+}
+body .teststep_table [description-tooltip]:before {
+  content: attr(description-tooltip);
+  position: absolute;
+  opacity: 0;
+  /*  width: max-content;*/
+  width: inherit;
+  top: -5px;
+  left: 105%;
+  padding: 5px 10px;
+  background-color: black;
+  border-radius: 0.25em;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  transition: 0.2s;
+  z-index: -10;
+}
+body .teststep_table [description-tooltip]:hover:before {
+  opacity: 1;
+  z-index: 100;
+}
+body .teststep_table td:nth-child(1) {
+  width: 10%;
+  text-align: left;
+}
 body .teststep_table td:nth-child(2) {
   width: 30%;
+  text-align: left;
 }
-
-body .teststep_table td:nth-child(3) {
-  width: 30%;
-}
-
 body .teststep_table td:nth-child(4) {
-  width: 10%;
+  width: 20%;
 }
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 1317px) {
+  body .teststep_table td:nth-child(1) {
+    width: auto;
+  }
+  body .teststep_table td:nth-child(2) {
+    width: auto;
+  }
+  body .teststep_table td:nth-child(3) {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+body .teststep_table tr:nth-child(even) {
+  background-color: rgba(242, 242, 242, 0.5411764706);
+}
+body .teststep_table tr:nth-child(even):hover {
+  background-color: rgb(220, 246, 255);
+}
+body .teststep_table tr:nth-child(even).active {
+  background-color: rgb(220, 246, 255);
+}/*# sourceMappingURL=style.css.map */

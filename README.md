@@ -10,7 +10,7 @@ go to https://localhost:3000 to open the interface.
 
 ### Structure
 - **Test Suits:** a collection of all tests for a specific application.
-- **Section:** organizes tests hierachically within a test suite e.g. all login tests, feature tests.
+- **Section:** organizes tests hierarchically within a test suite e.g. all login tests, feature tests.
 - **Test case:** can ideally be verified by a single tester in a short period of time and confirms a specific functionality, documents a task or verifies a project artifact.
 - **Test step:** single action within a test case, which can be done by executing a single action or at least very few.
   
@@ -58,13 +58,13 @@ description: describe your suite here
 define information about the section
 ~~~
 type: section
-type_description: organize test cases hierachically e.g. all video tests, all login tests
+type_description: organize test cases hierarchically e.g. all video tests, all login tests
 name: Unsorted Section
 description: describe your section here
 ~~~
 
 #### Test case
-define your test case and the steps required to fullfill it
+define your test case and the steps required to fulfill it
 ~~~
 - &id_basic_test
     type: test_case
@@ -77,6 +77,7 @@ define your test case and the steps required to fullfill it
         type: test step
         name: 
         description:
+        url:
         expected_result: 
 ~~~
 - **&id_basic_test** is the unique referrer which is used to link to this test case
