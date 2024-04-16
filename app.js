@@ -4,13 +4,14 @@ const hbs = require('hbs')
 const fs = require("fs")
 const app = express()
 
-const dataFile = 'data/data.json'
+// const dataFile = 'data/data.json'
 
 app.set('view engine', 'hbs')
 
 app.set('views', 'views')
 
 app.get('/', (req, res) => {
+    dataFile = `data/${req.query.project}/${req.query.scenario}.json`
     fs.readFile(dataFile, (err, data) => {
         if (err) {
             console.error('Error reading the file:', err);

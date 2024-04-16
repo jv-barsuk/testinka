@@ -1,14 +1,17 @@
 #! /bin/bash
 # build the final yaml
 
+if [[ -z $1 ]]; then
+    echo "Pass project path to script e.g. build.sh data/testinka-media-app-mobil"
+    exit 1
+fi
 
-DATA_DIR=data
+DATA_DIR=$1
 SUITE_DIR=$DATA_DIR/suites/map
-OUT_FILE=$DATA_DIR/data.yml
-OUT_JSON=$DATA_DIR/data.json
+OUT_FILE=$DATA_DIR/tmp.yml
+OUT_JSON=$DATA_DIR/tmp.json
 
 rm $OUT_FILE
-rm $OUT_JSON
 
 echo > $OUT_FILE
 echo -e "suites:\n-" >> $OUT_FILE
@@ -38,10 +41,12 @@ done
 
 echo "scenarios:" >> $OUT_FILE
 for f in $(ls $DATA_DIR/scenarios/*.yml); do
-    cat $f >> $OUT_FILE
-    echo -e "\n" >> $OUT_FILE
+    SCENARIO_OUT_FILE=$DATA_DIR/$(basename ${f:0:-4})
+    cp $OUT_FILE $SCENARIO_OUT_FILE.yml
+    cat $f >> $SCENARIO_OUT_FILE.yml
+    echo -e "\n" >> $SCENARIO_OUT_FILE.yml
 done
 
-yq eval -o=json $OUT_FILE > $OUT_JSON
+yq eval -o=json $SCENARIO_OUT_FILE.yml > $SCENARIO_OUT_FILE.json
 
 #cat out.json | jq '.collections[]|select(.name=="Basic Tests")'
