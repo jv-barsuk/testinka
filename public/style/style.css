@@ -142,6 +142,7 @@ body .type {
 body .teststep_table {
   border-spacing: 0px;
   width: 100%;
+  border-collapse: collapse;
   /* Teststep description Tooltip */
   /* Zebra table */
 }
@@ -152,6 +153,9 @@ body .teststep_table th {
   text-transform: uppercase;
   padding: 5px 10px;
 }
+body .teststep_table tr {
+  border-bottom: 1px solid lightgrey;
+}
 body .teststep_table tr:hover {
   background-color: rgb(220, 246, 255);
 }
@@ -160,7 +164,6 @@ body .teststep_table tr.active {
 }
 body .teststep_table td {
   padding: 5px 10px;
-  border-bottom: 1px solid lightgrey;
 }
 body .teststep_table td.note input {
   font-family: "Indie Flower";
@@ -202,6 +205,7 @@ body .teststep_table [description-tooltip]:hover:before {
 }
 body .teststep_table td:nth-child(1) {
   width: 10%;
+  min-width: 160px;
   text-align: left;
 }
 body .teststep_table td:nth-child(2) {

@@ -157,6 +157,7 @@ body {
     .teststep_table {
         border-spacing: 0px;
         width: 100%;
+        border-collapse: collapse;
         th {
             font-weight: bold;
             text-align: left;
@@ -165,6 +166,7 @@ body {
             padding: 5px 10px;
         }
         tr {
+            border-bottom: 1px solid lightgrey;
             &:hover {
                 background-color: rgb(220, 246, 255);
             }
@@ -174,7 +176,6 @@ body {
         }
         td {
             padding: 5px 10px;
-            border-bottom: 1px solid lightgrey;
             &.note input {
                 font-family: "Indie Flower";
                 border: none;
@@ -219,7 +220,8 @@ body {
         
         td:nth-child(1) {
             width: 10%;
-           text-align: left;
+            min-width: 160px;
+            text-align: left;
         }
         td:nth-child(2) {
             width: 30%;
