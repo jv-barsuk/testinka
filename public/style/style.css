@@ -157,6 +157,7 @@ body .teststep_table th {
   font-weight: 500;
   padding: 10px 10px;
   background-color: #fbfafd;
+  border-bottom: 1px solid #dcdcdc;
 }
 body .teststep_table tr {
   border-bottom: 1px solid #dcdcdc;
