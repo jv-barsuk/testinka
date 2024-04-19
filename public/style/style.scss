@@ -250,7 +250,14 @@ body {
 
 
     }
-    
-
-
 }
+
+@media print {
+    body{
+        -webkit-print-color-adjust:exact !important;
+        print-color-adjust:exact !important;
+      }
+    div.collection {
+      break-inside: avoid;
+    }
+  }
