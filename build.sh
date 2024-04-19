@@ -45,8 +45,9 @@ for f in $(ls $DATA_DIR/scenarios/*.yml); do
     cp $OUT_FILE $SCENARIO_OUT_FILE.yml
     cat $f >> $SCENARIO_OUT_FILE.yml
     echo -e "\n" >> $SCENARIO_OUT_FILE.yml
+    yq eval -o=json $SCENARIO_OUT_FILE.yml > $SCENARIO_OUT_FILE.json
 done
 
-yq eval -o=json $SCENARIO_OUT_FILE.yml > $SCENARIO_OUT_FILE.json
+
 
 #cat out.json | jq '.collections[]|select(.name=="Basic Tests")'
