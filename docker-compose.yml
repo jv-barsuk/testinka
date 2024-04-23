@@ -4,6 +4,7 @@ services:
     build: 
       context: .
       dockerfile: Dockerfile
+      network: host
     restart: always
     volumes:
       - ./data:/app/data
