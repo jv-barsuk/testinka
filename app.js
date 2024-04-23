@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
             res.send("Test not found")
             return
         }
-        
+        console.log(testData.scenarios[0])
         res.render('test.hbs', testData.scenarios[0])
     }); 
 })
