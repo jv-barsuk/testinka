@@ -11,13 +11,20 @@ app.set('view engine', 'hbs')
 app.set('views', 'views')
 
 app.get('/', (req, res) => {
-    dataFile = `data/${req.query.project}/${req.query.scenario}.json`
+    dataFile = `data/${req.query.project}/build/${req.query.scenario}.json`
     fs.readFile(dataFile, (err, data) => {
         if (err) {
             console.error('Error reading the file:', err);
             return;
         }
-        testData = JSON.parse(data);
+        try {
+            testData = JSON.parse(data);
+        } catch(e) {
+            console.error('Error reading the file:', err);
+            res.send("Test not found")
+            return
+        }
+        
         res.render('test.hbs', testData.scenarios[0])
     }); 
 })
