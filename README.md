@@ -8,6 +8,8 @@ npm run start
 ~~~
 go to `https://localhost:3000/?project={folder_name_of_project_in_data_dir}&scenario={name_of_scenario_file}` to open a test. Replace `{folder_name_of_project_in_data_dir}` and `{name_of_scenario_file}` accordingly. The name of the scenario file should be given without the postfix - so if the file is called `myapplication_basic_test.scenario.yml` just pass `myapplication_basic_test` in the URL.
 
+Here is a link to the demo test: http://localhost:3000/?project=testinka-demo&scenario=sprint_0_0_1_android
+
 ## Deploy (Docker)
 Deploy Testinka on a server by running
 ~~~

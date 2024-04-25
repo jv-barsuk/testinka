@@ -7,15 +7,27 @@ suites:
       name: base
       test_cases:
           - &id_download_page
-              name: Buchinformationen und Suche im Buch testen
+              name: Download Page Test
               steps:
               -
-                  name: Cover und Buchtitel prüfen
+                  name: Open the download page
+                  expected_result: Download page shown and style OK
+              -
+                  name: Click the download button
+          - &id_login
+              name: Login screen
+              steps:
+              -
+                  name: Enter username
+                  expected_result: Placeholder is removed
+              -
+                  name: Enter password
 collections:
 - &collection_sprint_0_0_1
     name: Sprint 0.0.1
     test_cases:
     - *id_download_page
+    - *id_login
 
 
 scenarios:

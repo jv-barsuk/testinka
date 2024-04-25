@@ -7,10 +7,26 @@
           "name": "base",
           "test_cases": [
             {
-              "name": "Buchinformationen und Suche im Buch testen",
+              "name": "Download Page Test",
               "steps": [
                 {
-                  "name": "Cover und Buchtitel prüfen"
+                  "name": "Open the download page",
+                  "expected_result": "Download page shown and style OK"
+                },
+                {
+                  "name": "Click the download button"
+                }
+              ]
+            },
+            {
+              "name": "Login screen",
+              "steps": [
+                {
+                  "name": "Enter username",
+                  "expected_result": "Placeholder is removed"
+                },
+                {
+                  "name": "Enter password"
                 }
               ]
             }
@@ -24,10 +40,26 @@
       "name": "Sprint 0.0.1",
       "test_cases": [
         {
-          "name": "Buchinformationen und Suche im Buch testen",
+          "name": "Download Page Test",
           "steps": [
             {
-              "name": "Cover und Buchtitel prüfen"
+              "name": "Open the download page",
+              "expected_result": "Download page shown and style OK"
+            },
+            {
+              "name": "Click the download button"
+            }
+          ]
+        },
+        {
+          "name": "Login screen",
+          "steps": [
+            {
+              "name": "Enter username",
+              "expected_result": "Placeholder is removed"
+            },
+            {
+              "name": "Enter password"
             }
           ]
         }
@@ -36,7 +68,7 @@
   ],
   "scenarios": [
     {
-      "name": "Basic scenario Media App mobile tests (online/offline)",
+      "name": "Basic tests (Android)",
       "description": null,
       "scenario": [
         {
@@ -44,17 +76,33 @@
             "name": "Sprint 0.0.1",
             "test_cases": [
               {
-                "name": "Buchinformationen und Suche im Buch testen",
+                "name": "Download Page Test",
                 "steps": [
                   {
-                    "name": "Cover und Buchtitel prüfen"
+                    "name": "Open the download page",
+                    "expected_result": "Download page shown and style OK"
+                  },
+                  {
+                    "name": "Click the download button"
+                  }
+                ]
+              },
+              {
+                "name": "Login screen",
+                "steps": [
+                  {
+                    "name": "Enter username",
+                    "expected_result": "Placeholder is removed"
+                  },
+                  {
+                    "name": "Enter password"
                   }
                 ]
               }
             ]
           },
           "variables": [
-            "deutsches Interface"
+            "english Interface"
           ]
         }
       ]
