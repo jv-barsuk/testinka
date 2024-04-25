@@ -1,0 +1,26 @@
+
+suites:
+-
+  name: suite
+  sections:
+    -
+      name: base
+      test_cases:
+          - &id_download_page
+              name: Buchinformationen und Suche im Buch testen
+              steps:
+              -
+                  name: Cover und Buchtitel prüfen
+collections:
+- &collection_sprint_0_0_1
+    name: Sprint 0.0.1
+    test_cases:
+    - *id_download_page
+
+
+scenarios:
+- &scenario_sprint_0_0_1_ios
+    name: Basic scenario Media App mobile tests (online/offline)
+    description:
+    scenario:
+

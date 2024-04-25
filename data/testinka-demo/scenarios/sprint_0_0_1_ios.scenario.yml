@@ -1,0 +1,4 @@
+- &scenario_sprint_0_0_1_ios
+    name: Basic tests (iOS)
+    description:
+    scenario:

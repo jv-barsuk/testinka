@@ -1,0 +1,9 @@
+- &id_login
+    name: Login screen
+    steps:
+    -
+        name: Enter username
+        expected_result: Placeholder is removed
+    -
+        name: Enter password
+        expected_result: Placeholder is removed, password is not shown        

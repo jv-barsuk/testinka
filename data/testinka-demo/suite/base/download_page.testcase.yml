@@ -1,0 +1,9 @@
+- &id_download_page
+    name: Download Page Test
+    steps:
+    -
+        name: Open the download page
+        expected_result: Download page shown and style OK
+    -
+        name: Click the download button
+        expected_result: ZIP file downloaded

@@ -1,0 +1,5 @@
+- &collection_sprint_0_0_1
+    name: Sprint 0.0.1
+    test_cases:
+    - *id_download_page
+    - *id_login

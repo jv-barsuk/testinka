@@ -1,0 +1,7 @@
+- &scenario_sprint_0_0_1_android
+    name: Basic tests (Android)
+    description:
+    scenario:
+        -   collection: *collection_sprint_0_0_1
+            variables:
+                - english Interface

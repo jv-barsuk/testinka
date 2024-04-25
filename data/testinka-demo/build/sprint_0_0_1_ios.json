@@ -1,0 +1,44 @@
+{
+  "suites": [
+    {
+      "name": "suite",
+      "sections": [
+        {
+          "name": "base",
+          "test_cases": [
+            {
+              "name": "Buchinformationen und Suche im Buch testen",
+              "steps": [
+                {
+                  "name": "Cover und Buchtitel prüfen"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "name": "Sprint 0.0.1",
+      "test_cases": [
+        {
+          "name": "Buchinformationen und Suche im Buch testen",
+          "steps": [
+            {
+              "name": "Cover und Buchtitel prüfen"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "Basic scenario Media App mobile tests (online/offline)",
+      "description": null,
+      "scenario": null
+    }
+  ]
+}
